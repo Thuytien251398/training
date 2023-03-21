@@ -1,0 +1,112 @@
+.fosacha--introduce-margin {
+	margin: 40px 0;
+}
+
+.fosacha--introduce-title {
+	font-family: 'SVN-Rosellinda Alyamore';
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 1;
+	color: $link;
+	text-align: center;
+	padding: 35px 0 75px;
+}
+
+.fosacha--introduce-content {
+	display: block;
+	margin-bottom: 50px;
+
+	@media (max-width: 991px) {
+		margin-bottom: 0;
+	}
+
+	&__has-bg {
+		position: relative;
+		padding: 60px 0 0;
+
+		@media (max-width: 991px) {
+			padding: 30px 0 0;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: #f6f6f6;
+			width: 100%;
+			height: 85%;
+			top: 0;
+			left: 0;
+
+			@media (max-width: 991px) {
+				height: 100%;
+			}
+		}
+	}
+
+	.desc {
+		display: block;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		color: #4f4f4f;
+		margin-bottom: 15px;
+	}
+
+	.image {
+		display: block;
+		width: 100%;
+		height: 365px;
+		border-radius: 8px;
+		overflow: hidden;
+
+		&.image-full {
+			width: 100%;
+			height: auto;
+			border-radius: unset;
+
+			img {
+				object-fit: unset;
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	h3.title {
+		position: relative;
+		display: block;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #000000;
+		margin-bottom: 16px;
+
+		&.has-border {
+			padding-bottom: 15px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				background: $link;
+				width: 100%;
+				height: 1px;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+
+	.box-resource {
+		display: block;
+		margin-bottom: 50px;
+
+		@media (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+	}
+}

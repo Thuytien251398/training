@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../public/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../public/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../public/css/style.css" />
+</head>
+<body class="home">
+    <div id="app">
+        <myheader></myheader>
+
+        <main>
+            <section class="section-banner">
+                <div class="swiper mySwiper d-none d-md-block w-100" id="bannerHomeJS">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" v-for="n in 4">
+                            <a href="javascript:;">
+                                <img class="" src="./../public/images/bannerhome.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="section-introduce" style="background-image: url(./../public/images/bg-introduce.png);">
+                <div class="container">
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-6 p-0">
+                            <div class="text-center">
+                                <img src="./../public/images/introduce-img.png">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-0">
+                            <div class="textbox">
+                                <div class="sub">
+                                    Greeting we are
+                                </div>
+                                <h2 class="title-component">
+                                    FOSACHA!
+                                </h2>
+                                <p>
+                                    FOSACHA is a tech-based agricultural products exporter in Vietnam. We export high-quality, VietGAP,
+                                    GlobalGAP certified fruits, vegetables, spices, and other agricultural products from Vietnam to the
+                                    world.
+                                </p>
+                                <p>
+                                    FOSACHA was established to provide a platform for international importers looking for the best deals
+                                    of high-quality, nutritious, and delicious tropical fruits, vegetables, and spices from Vietnam with
+                                    traceability in the fastest and most efficient way. FOSACHA works on the benefits of not only its
+                                    shareholders and partners but also the local farmers and Vietnam's agriculture in general
+                                </p>
+                                <p>
+                                    Currently, FOSACHA has been reached out by many potential customers, as well as diversifying our
+                                    products portfolio, and improving the quality of the products. FOSACHA strives to be a prominent
+                                    exporter in Vietnam’s export industry, bringing top-quality products to help increase and affirm the
+                                    value of Vietnamese agricultural products on the global market.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-6 mb-lg-0 mb-5 mt-sm-5 mt-lg-0 mt-3" v-for="n in 4">
+                            <div class="product">
+                                <a href="javascript:;" class="product--links">
+                                    <div class="product--image">
+                                        <img src="./../public/images/prd4.png" alt="">
+                                    </div>
+                                    <div class="product--content">
+                                        <div class="top-index">
+                                            <h2 class="title">
+                                                vegetables
+                                            </h2>
+
+                                            <div class="sub">
+                                                (Safe and Traceability)
+                                            </div>
+                                        </div>
+
+                                        <p class="para">
+                                            Fragrant spice sourced directly from trusted farms, sorted and processed following food safety
+                                            standards’
+                                            Fragrant spice sourced directly from trusted farms, sorted and processed following food safety
+                                            standards’
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section--gallery">
+                <div class="container position-relative">
+                    <h2 class="title-component">
+                        Our Gallery
+                    </h2>
+                    <div class="swiper mySwiper js--gallery-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" v-for="n in 6">
+                                <a href="javascript:;">
+                                    <img src="./../public/images/gallery-img.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="slide-nav-custom">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-video" style="background-image: url(./../public/images/bg-gradient-video.jpg);">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="video-wrapper">
+                            <iframe width="100%" height="435" src="https://www.youtube.com/embed/WrzSLD5QgSY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="content-wrapper">
+
+                            <div class="sub">
+                                Greeting we are
+                            </div>
+
+                            <h2 class="title-component">
+
+                                Ha Giang Terracotta Orange
+
+                            </h2>
+
+                            <div class="desc">
+                                <p>
+                                    FOSACHA is a tech-based agricultural products exporter in Vietnam. We export high-quality, VietGAP,
+                                    GlobalGAP certified fruits, vegetables, spices, and other agricultural products from Vietnam to the
+                                    world.
+                                    FOSACHA was established to provide a platform for international importers
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section--col" style="background-image: url(./../public/images/bg-col.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-6 mb-4 mb-xl-0">
+                            <div class="box-col">
+                                <img src="./../public/images/col-1.png" alt="">
+                                speed & <br /> fast response
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-6 mb-4 mb-xl-0">
+                            <div class="box-col">
+                                <img src="./../public/images/col-2.png" alt="">
+                                competitive <br />
+                                pricing
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-6 mb-4 mb-xl-0">
+                            <div class="box-col">
+                                <img src="./../public/images/col-3.png" alt="">
+                                quality, standard, <br />
+                                and traceability
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-6 mb-4 mb-xl-0">
+                            <div class="box-col">
+                                <img src="./../public/images/col-4.png" alt="">
+                                post-sale <br />
+                                customer service
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section--news">
+                <div class="container">
+                    <div class="d-block text-center">
+                        <h2 class="title-component">
+                            News
+                        </h2>
+                    </div>
+                    <div class="news--list d-none d-md-block">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                                <article class="article-vertical article-style">
+                                    <div class="images">
+                                        <a href="javascript:;" title="">
+                                            <img src="./../public/images/img-blog.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="javascript:;" title="" class="title-main">Ingenious farmers breed new fruit varieties. </a>
+
+                                        <div class="date">
+                                            <img src="./../public/images/ic-calendar.svg" alt="">
+                                            17 NOW 2021
+                                        </div>
+
+                                        <p>
+                                            Ever wished you could have mangoes year round, custard apples with fewer seeds or jumbo grapes?
+                                            Now you can, thanks to some innovative, self-taught famers...
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <article class="article-horizontal article-style" v-for="n in 2">
+                                    <div class="images">
+                                        <a href="javascript:;" title="">
+                                            <img src="./../public/images/img-blog.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="content">
+                                        <a href="javascript:;" title="" class="title-main">Ingenious farmers breed new fruit varieties. </a>
+
+                                        <div class="date">
+                                            <img src="./../public/images/ic-calendar.svg" alt="">
+                                            17 NOW 2021
+                                        </div>
+
+                                        <p>
+                                            Ever wished you could have mangoes year round, custard apples with fewer seeds or jumbo grapes?
+                                            Now you can, thanks to some innovative, self-taught famers...
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="d-block text-center w-100 mt-3">
+                                <a href="javascript:;" class="btn--more-products btn--ajax">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mobileNews" class="position-relative d-block d-md-none">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <article class="article-vertical article-style">
+                                        <div class="images">
+                                            <a href="javascript:;" title="">
+                                                <img src="./../public/images/img-blog.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="content">
+                                            <a href="javascript:;" title="" class="title-main">Ingenious farmers breed new fruit varieties.
+                                            </a>
+
+                                            <div class="date">
+                                                <img src="./../public/images/ic-calendar.svg" alt="">
+                                                17 NOW 2021
+                                            </div>
+
+                                            <p>
+                                                Ever wished you could have mangoes year round, custard apples with fewer seeds or jumbo grapes?
+                                                Now you can, thanks to some innovative, self-taught famers...
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <article class="article-vertical article-style">
+                                        <div class="images">
+                                            <a href="javascript:;" title="">
+                                                <img src="./../public/images/img-blog.png" alt="">
+                                            </a>
+                                        </div>
+
+                                        <div class="content">
+                                            <a href="javascript:;" title="" class="title-main">Ingenious farmers breed new fruit varieties.
+                                            </a>
+
+                                            <div class="date">
+                                                <img src="./../public/images/ic-calendar.svg" alt="">
+                                                17 NOW 2021
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section--partner">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper swiperPartner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" v-for="n in 6">
+                                <img src="images/logo-partner.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <myfooter></myfooter>
+    </div>
+<script src="./../public/js/vue.js"></script>
+<script src="./../public/js/httpvueloader.js"></script>
+<script src="./../public/libs/jquery/jquery.min.js"></script>
+<script src="./../public/libs/bootstrap/bootstrap.min.js"></script>
+<script src="./../public/libs/swiper/swiper-bundle.min.js"></script>
+<script src="./../public/libs/scrollreveal/scrollreveal.min.js"></script>
+<script src="./../public/js/main.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        components: {
+            myheader: httpVueLoader('./../components/hearder.vue'),
+            myfooter: httpVueLoader('./../components/footer.vue'),
+        },
+        mounted() {
+            $(window).bind('load', function () {
+                var swiperBannerHome = new Swiper("#bannerHomeJS", {
+                    speed: 2000,
+                    autoplay: {
+                        delay: 2000,
+                    },
+                    touchRatio: 0.5,
+                    loop: true,
+                    // effect: 'fade',
+                    // fadeEffect: {
+                    //   crossFade: true
+                    // },
+                });
+
+                var swiperGallery = new Swiper(".js--gallery-slide ", {
+                    autoplay: true,
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1.3,
+                            spaceBetween: 22
+                        },
+                        576: {
+                            slidesPerView: 2.3,
+                            spaceBetween: 22
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 30
+                        },
+                    },
+                    pagination: {
+                        el: ".section--gallery .swiper-pagination",
+                    },
+                    navigation: {
+                        nextEl: ".section--gallery .swiper-button-next",
+                        prevEl: ".section--gallery .swiper-button-prev",
+                    },
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

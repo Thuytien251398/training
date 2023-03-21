@@ -1,0 +1,207 @@
+@import '../fonts/fontawesome/scss/fontawesome';
+@import '../fonts/fontawesome/scss/solid';
+@import '../fonts/fontawesome/scss/brands';
+@import '../fonts/fontawesome/scss/animated';
+@import '../fonts/fontawesome/scss/bordered-pulled';
+@import '../fonts/fontawesome/scss/core';
+@import '../fonts/fontawesome/scss/fixed-width';
+@import '../fonts/fontawesome/scss/icons';
+@import '../fonts/fontawesome/scss/larger';
+@import '../fonts/fontawesome/scss/list';
+@import '../fonts/fontawesome/scss/mixins';
+@import '../fonts/fontawesome/scss/rotated-flipped';
+@import '../fonts/fontawesome/scss/screen-reader';
+@import '../fonts/fontawesome/scss/shims';
+@import '../fonts/fontawesome/scss/stacked';
+@import '../fonts/fontawesome/scss/variables';
+
+@font-face {
+	font-family: 'SVN-Rosellinda Alyamore';
+	src: url('../fonts/rosellinda-alyamore/SVN-RosellindaAlyamore.woff2')
+			format('woff2'),
+		url('../fonts/rosellinda-alyamore/SVN-RosellindaAlyamore.woff')
+			format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Black.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-HeavyItalic.woff2')
+			format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-HeavyItalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Bold.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Light.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Regular.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Medium.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Thin.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Ultralight.woff2')
+			format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Ultralight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/sfprodisplay/SFProDisplay-Semibold.woff2') format('woff2'),
+		url('../fonts/sfprodisplay/SFProDisplay-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-BoldItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-BlackItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-BlackItalic.woff')
+			format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-MediumItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-MediumItalic.woff')
+			format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-HeavyItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-HeavyItalic.woff')
+			format('woff');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-LightItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-LightItalic.woff')
+			format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-RegularItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-RegularItalic.woff')
+			format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-SemiboldItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-SemiboldItalic.woff')
+			format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-UltralightItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-UltralightItalic.woff')
+			format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('../fonts/SF Pro Display/SF Pro Display-ThinItalic.woff2')
+			format('woff2'),
+		url('../fonts/SF Pro Display/SF Pro Display-ThinItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}

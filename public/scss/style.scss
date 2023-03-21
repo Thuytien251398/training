@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import "../scss/_fonts.scss";
+
+// bootstrap
+@import "../scss/bootstrap/bootstrap-grid",
+        "../scss/bootstrap/bootstrap-reboot",
+        "../scss/bootstrap/bootstrap-utilities";
+
+@import "../scss/reset", 
+        "../scss/variables", 
+        "../scss/body",
+
+        //components
+        "../scss/components/header", 
+        "../scss/components/header-site", 
+        "../scss/components/footer",
+
+        // page giới thiệu
+        "../scss/pages/gioithieu/about-us",
+        "../scss/pages/gioithieu/why-choose-us",
+        "../scss/pages/gioithieu/our-facilities",
+        "../scss/pages/gioithieu/mobile",
+
+        // page product
+        "../scss/pages/product/category",
+        "../scss/pages/product/list",
+        "../scss/pages/product/detail",
+        "../scss/pages/product/mobile",
+
+        // page contact
+        "../scss/pages/contact/contact",
+        "../scss/pages/contact/form-dangky",
+        "../scss/pages/contact/mobile",
+
+        // page news
+        "../scss/pages/news/list",
+        "../scss/pages/news/detail",
+        "../scss/pages/news/mobile",
+
+        // pages
+        "../scss/pages/component",
+        "../scss/pages/index";
+
+// mobile
+
+@import "../scss/pages/mobile-index";

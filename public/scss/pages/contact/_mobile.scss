@@ -1,0 +1,54 @@
+@media (max-width: 767px) {
+	.contact-page--logo {
+		display: none;
+	}
+
+	.contact-address--list {
+		& > * {
+			margin-bottom: 20px;
+		}
+
+		.info {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.75;
+			color: #282829;
+		}
+
+		.city {
+			font-weight: 600;
+		}
+	}
+
+	.maps-mobile {
+		iframe {
+			height: 250px;
+		}
+	}
+
+	.contact-page--form {
+		padding: 0;
+
+		.form-contact {
+			margin: 0 0 40px 0;
+		}
+
+		.block--image-large {
+			display: none;
+		}
+	}
+
+	.mobile-block-image {
+		@include col-img(78%, cover);
+	}
+}
+
+#mobileNews {
+	.swiper-slide {
+		height: auto;
+	}
+
+	.article-vertical {
+		height: 100%;
+	}
+}

@@ -1,0 +1,174 @@
+.menu {
+	// large screen
+	@media (min-width: 992px) {
+		&-items {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&-links {
+			position: relative;
+
+			&:hover {
+				.menu-sub {
+					opacity: 1;
+					visibility: visible;
+					transform: translate(0, 0);
+					transition: all 0.3s;
+				}
+			}
+		}
+
+		&-sub {
+			position: absolute;
+			opacity: 0;
+			visibility: hidden;
+			transform: translate(0, 20px);
+			transition: all 0.3s;
+		}
+	}
+
+	// mobile screen
+	@media (max-width: 991px) {
+		.menu-hamburger {
+			&-line {
+				height: 2px;
+				background: #333;
+				margin: 4px auto 4px 0;
+				width: 18px;
+			}
+
+			&.menu-open {
+				display: none;
+			}
+		}
+
+		&-close {
+			display: none;
+
+			img {
+				width: 18px;
+				height: auto;
+				object-fit: contain;
+			}
+
+			&.active {
+				display: block;
+			}
+		}
+
+		&-overlay {
+			display: block;
+			&.active {
+				display: block;
+				position: fixed;
+				background: #000;
+				opacity: 0.5;
+				visibility: visible;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 111;
+			}
+		}
+
+		&-items {
+			display: flex;
+			flex-flow: column;
+			position: fixed;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background: #fff;
+			box-shadow: 0px -2px 4px rgb(0 0 0 / 8%);
+			height: 100%;
+			width: 100%;
+			transform: translateY(20%);
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: all 0.3s linear;
+			z-index: 111;
+
+			&.active {
+				transform: translateY(0);
+				opacity: 1;
+				visibility: visible;
+				pointer-events: inherit;
+				transition: all 0.3s linear;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 15px;
+				top: -14px;
+				left: 0;
+				right: 0;
+				background-image: url(../images/top-triangle-mobile.png);
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				z-index: 2;
+			}
+		}
+
+		&-parent {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			justify-content: space-between;
+			padding: 15px 10px;
+			border-bottom: 1px solid #ccc;
+
+			a {
+				color: #333;
+				font-size: 14px;
+			}
+
+			i {
+				font-size: 10px;
+				font-weight: 100;
+				color: #333;
+				transition: all 0.2s;
+
+				&.active {
+					transform: rotate(180deg);
+					transition: all 0.2s;
+				}
+			}
+		}
+
+		&-sub {
+			display: none;
+
+			&-items {
+				display: flex;
+				flex-flow: column;
+				border-bottom: 1px solid #ccc;
+				padding: 10px 0;
+
+				a {
+					font-weight: 600 !important;
+					font-size: 14px;
+					padding: 0 10px;
+
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+				}
+
+				i {
+					font-size: 10px;
+					font-weight: 100;
+					color: #333;
+				}
+			}
+		}
+	}
+}

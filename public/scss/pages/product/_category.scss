@@ -1,0 +1,149 @@
+.product-page--title {
+	display: block;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+	margin: 35px 0;
+
+	@media (min-width: 768px) {
+		font-size: 32px;
+		margin: 44px 0 24px;
+	}
+
+	@media (min-width: 1200px) {
+		font-size: 40px;
+	}
+}
+
+.product--list-category {
+	margin-bottom: 30px;
+
+	@media (min-width: 1200px) {
+		margin-bottom: 60px;
+	}
+
+	.cate-item {
+		position: relative;
+		margin-bottom: 30px;
+
+		&--link {
+			&:hover {
+				.cate-item {
+					&--image {
+						&::before {
+							width: 100%;
+							height: 100%;
+							// background: #169e4a;
+							background: #b2d235;
+							top: 0;
+							left: 0;
+							opacity: 0.9;
+							mix-blend-mode: unset;
+							transition: all 0.2s;
+						}
+					}
+
+					&--content {
+						.title,
+						.sub,
+						.desc {
+							color: #282829;
+							transition: all 0.3s;
+						}
+					}
+				}
+			}
+		}
+
+		&--image {
+			@include col-img(44%, cover);
+			position: relative;
+			border-radius: 14px;
+			z-index: -1;
+
+			@media (max-width: 767px) {
+				@include col-img(56.25%, cover);
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				background: #282829;
+				mix-blend-mode: multiply;
+				opacity: 0.7;
+				border-radius: 8px;
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				top: 10px;
+				left: 10px;
+				z-index: 1;
+				transition: all 0.2s;
+
+				@media (max-width: 767px) {
+					width: calc(100% - 14px);
+					height: calc(100% - 14px);
+					top: 7px;
+					left: 7px;
+				}
+			}
+		}
+
+		&--content {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			padding: 0 70px;
+
+			@media (max-width: 1199px) {
+				padding: 30px;
+			}
+
+			.title {
+				display: block;
+				font-weight: 800;
+				font-size: 26px;
+				line-height: 32px;
+				text-transform: uppercase;
+				color: #b2d235;
+				transition: all 0.3s;
+				margin-bottom: 0;
+
+				@media (max-width: 767px) {
+					font-weight: 600;
+				}
+			}
+
+			.sub {
+				display: block;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 2;
+				color: #ffffff;
+
+				@media (max-width: 767px) {
+					font-weight: 400;
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.desc {
+				@include line-clamp(3);
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 1.4;
+				color: #fff;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

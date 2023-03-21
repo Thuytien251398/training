@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+$link: #129d49;
+
+body {
+	background: #fff;
+	font-family: 'SF Pro Display';
+	font-weight: normal;
+	font-size: 14px;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	transition: all 0.3s;
+	&:hover {
+		transition: all 0.3s;
+	}
+}
+
+a {
+	transition: all 0.3s;
+	text-decoration: none;
+
+	&:hover,
+	&.active {
+		text-decoration: none;
+		transition: all 0.3s;
+	}
+}
+
+input,
+textarea,
+select {
+	&:focus {
+		outline: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}

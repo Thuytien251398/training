@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../public/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../public/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./../public/css/style.css" />
+</head>
+<body class="home">
+    <div id="app">
+        <myheader></myheader>
+        <main>
+            <section class="section-banner">
+                <div class="swiper mySwiper  w-100" id="bannerHomeJS">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" v-for="n in 4">
+                            <a href="javascript:;">
+                                <img class="" src="./../public/images/bannerhome.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="./../public/js/vue.js"></script>
+<script src="./../public/js/httpvueloader.js"></script>
+<script src="./../public/libs/jquery/jquery.min.js"></script>
+<script src="./../public/libs/bootstrap/bootstrap.min.js"></script>
+<script src="./../public/libs/swiper/swiper-bundle.min.js"></script>
+<script src="./../public/libs/scrollreveal/scrollreveal.min.js"></script>
+<script src="./../public/js/main.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        components: {
+            myheader: httpVueLoader('./../components/hearder.vue'),
+            myfooter: httpVueLoader('./../components/footer.vue'),
+        },
+        mounted() {
+            $(window).bind('load', function () {
+                var swiperBannerHome = new Swiper("#bannerHomeJS", {
+                    speed: 2000,
+                    autoplay: {
+                        delay: 2000,
+                    },
+                    touchRatio: 0.5,
+                    loop: true,
+                    // effect: 'fade',
+                    // fadeEffect: {
+                    //   crossFade: true
+                    // },
+                });
+            });
+        }
+    });
+</script>
+</body>
+</html>

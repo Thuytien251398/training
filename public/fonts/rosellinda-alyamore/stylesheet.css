@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'SVN-Rosellinda Alyamore';
+	src: url('../fonts/rosellinda-alyamore/SVN-RosellindaAlyamore.woff2')
+			format('woff2'),
+		url('../fonts/rosellinda-alyamore/SVN-RosellindaAlyamore.woff')
+			format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

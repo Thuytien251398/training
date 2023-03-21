@@ -1,0 +1,163 @@
+@media (max-width: 767px) {
+	.article--main-large {
+		.image {
+			@include col-img(68%, cover);
+		}
+
+		.content {
+			.title {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 1.5;
+				letter-spacing: 0.03em;
+				color: #121212;
+				margin-bottom: 8px;
+			}
+
+			.desc {
+				@include line-clamp(4);
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.4;
+				color: #4f4f4f;
+			}
+
+			.link {
+				display: none;
+			}
+		}
+	}
+
+	.article--box {
+		[class*='col-'] {
+			&:not(:first-child) {
+				.article--main {
+					position: relative;
+					display: flex;
+					flex-wrap: wrap;
+					align-items: flex-start;
+
+					.image {
+						@include col-img(27%, cover);
+						max-width: 150px;
+						height: 100%;
+					}
+
+					.content {
+						margin-left: 16px;
+
+						.title {
+							@include line-clamp(3);
+							font-weight: 500;
+							font-size: 18px;
+							line-height: 1.5;
+							letter-spacing: 0.03em;
+							color: #121212;
+						}
+
+						.desc,
+						.link {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.article-list--bottom {
+		.article--main {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+
+			.image {
+				@include col-img(27%, cover);
+				max-width: 150px;
+				height: 100%;
+			}
+
+			.content {
+				margin-left: 16px;
+
+				.title {
+					@include line-clamp(3);
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 1.5;
+					letter-spacing: 0.03em;
+					color: #121212;
+				}
+
+				.desc,
+				.link {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.news--detail-content {
+		.entry-header {
+			.top--main-title {
+				display: block;
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 1.25;
+				text-align: center;
+				letter-spacing: 0.03em;
+				color: #282829;
+				margin-bottom: 20px;
+			}
+		}
+
+		.entry-body {
+			p {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 1.5;
+				color: #333333;
+			}
+
+			img {
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+				width: auto;
+				height: auto;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	#swiperRelatedArticle {
+		border: unset;
+	}
+
+	.related-article {
+		[class*='swiper-button'] {
+			display: none;
+		}
+
+		.article--main-large {
+			.image {
+				@include col-img(64%, cover);
+			}
+
+			.content {
+				.title {
+					@include line-clamp(3);
+				}
+
+				.desc {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 1.4;
+					color: #454545;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.section--top-banner {
+	height: 325px;
+	width: 100%;
+	overflow: hidden;
+
+	@media (max-width: 1199px) {
+		height: 250px;
+	}
+
+	@media (max-width: 767px) {
+		height: 150px;
+		display: none;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.fosacha--breadcrumb {
+	background: #f2f2f2;
+
+	.item {
+		position: relative;
+		display: inline-block;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 32px;
+		color: #4f4f4f;
+		padding: 8px 0;
+
+		&.active {
+			color: $link;
+		}
+
+		&:not(:last-child) {
+			padding-right: 10px;
+			margin-right: 10px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				background: #c4c4c4;
+				width: 1px;
+				height: 20px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+.fosacha--introduce-navtab {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+
+	.item {
+		display: inline-block;
+		max-width: 260px;
+		width: 100%;
+		text-align: center;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		color: #333333;
+		border: 1px solid #bdbdbd;
+		padding: 9px;
+
+		&.active {
+			background: $link;
+			border: 1px solid $link;
+			color: #fff;
+		}
+
+		@media (max-width: 1199px) {
+			max-width: 150px;
+		}
+	}
+}
